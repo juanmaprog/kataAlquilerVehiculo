@@ -33,8 +33,8 @@ var añoExpdecionCarnet = prompt(
   "Indique el año de expedición del carnet de conducir."
 );
 
-console.log("Ha elegido", referenciaSolicitada);
-console.log("Año", añoExpdecionCarnet);
+// console.log("Has elegido", referenciaSolicitada);
+// console.log("Año", añoExpdecionCarnet);
 
 var vehiculo = getVehiculoSolicitado();
 
