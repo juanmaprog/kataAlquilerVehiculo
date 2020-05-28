@@ -4,9 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/styles.css" type="text/css" rel="stylesheet" />
-    <title>Kata coche</title>
+    <script src="js/alquilerController.js"></script>
+    <script src="js/tabla.js"></script>
+
+    <title>Kata alquiler vehículo</title>
   </head>
-  <body>
-    <script src="js/main.js"></script>
+  <body onload="generaTabla();">
+    <!-- Tabla -->
+    <div class="tabla" id="tbl"></div>
+
+    <!-- Etiqueta año expedición carnet -->
+    <label>Año de expedición del carnet </label>
+
+    <!-- Input año expedición carnet -->
+    <input
+      id="año-expedicion-carnet"
+      title="Año expedición del carnet de conducir"
+      type="number"
+      value="2018"
+      placeholder="Año de expedición del carnet"
+    />
+
+    <!-- Etiqueta vehículo -->
+    <label>Vehículo</label>
+
+    <!-- Input referencia vehículo -->
+    <input
+      id="referencia-vehiculo"
+      title="Referencia del vehículo (ingresar del 1 al 3)"
+      placeholder="Referencia (del 1 al 3)"
+      type="number"
+      value="1"
+    />
+
+    <br />
+
+    <!-- Botón solicitar alquiler -->
+    <button id="btnSolicitarAlquiler" onclick="solicitarAlquiler()">
+      Solicitar
+    </button>
+
+    <!-- Estado de la solicitud -->
+    <div class="estado-solicitud">
+      <p id="resultado-solicitud">Estado de la solicitud: No solicitado</p>
+    </div>
   </body>
 </html>

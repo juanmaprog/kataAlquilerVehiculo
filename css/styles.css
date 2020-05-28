@@ -1,0 +1,52 @@
+/* CUERPO */
+
+body {
+    border: 3px solid #f1f1f1;
+}
+
+/* TABLA */
+
+.tabla {
+    margin-bottom: 20px;
+    border: none;
+    color: darkblue;
+}
+
+/* ETIQUETAS */
+
+label {
+    display: block;
+}
+
+/* INPUTS */
+
+input {
+    width: 185px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 185px;
+    height: 40px;
+}
+
+/* EFECTO DE DESPLAZAMIENTO DEL BOTÓN */
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* PÁRRAFO */
+
+p {
+    background-color: white;
+    color: blue;
+}
